@@ -1,0 +1,257 @@
+{
+  "last_node_id": 9,
+  "last_link_id": 13,
+  "nodes": [
+    {
+      "id": 9,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -1634.879638671875,
+        -2316.532470703125
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 13
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "shape": 6,
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 3,
+      "type": "Comfly_kling_videoPreview",
+      "pos": [
+        -1618.6236572265625,
+        -2175.574462890625
+      ],
+      "size": [
+        315,
+        26
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "link": 10
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "Comfly_kling_videoPreview"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 2,
+      "type": "LoadImage",
+      "pos": [
+        -2446.424560546875,
+        -2157.67529296875
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            9
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "372c2c65463abee14cb4a8b5654c63fe.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -2053.94189453125,
+        -2325.6748046875
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 11
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "shape": 6,
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 7,
+      "type": "ComfyuiGoogleVeo2",
+      "pos": [
+        -2082.70947265625,
+        -2163.047119140625
+      ],
+      "size": [
+        379,
+        350
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 9
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "links": [
+            10
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "video_url",
+          "type": "STRING",
+          "links": [
+            11
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "response",
+          "type": "STRING",
+          "links": [
+            13
+          ],
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ComfyuiGoogleVeo2"
+      },
+      "widgets_values": [
+        "让毒液动起来",
+        "",
+        "16:9",
+        "dont_allow",
+        8,
+        1,
+        "",
+        468058171236728,
+        "randomize"
+      ]
+    }
+  ],
+  "links": [
+    [
+      9,
+      2,
+      0,
+      7,
+      0,
+      "IMAGE"
+    ],
+    [
+      10,
+      7,
+      0,
+      3,
+      0,
+      "VIDEO"
+    ],
+    [
+      11,
+      7,
+      1,
+      4,
+      0,
+      "STRING"
+    ],
+    [
+      13,
+      7,
+      2,
+      9,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1,
+      "offset": [
+        2605.8795952979426,
+        2473.5323517300935
+      ]
+    }
+  },
+  "version": 0.4
+}
