@@ -3,7 +3,11 @@
 > **Warning**
 > 
 > 插件只在windows11上测试，mac电脑后续我也会测试，如果其他系统有任何问题，可以提交issues
+> 
 > 使用的是官方的 https://aistudio.google.com 的 api key
+>
+> 需要你已经获得视频使用资格才行！！不是所有人都有。
+
 
 # 插件 Node：
 
@@ -12,6 +16,7 @@
 新增googel的Comfyui-google-veo2-api节点，。
 目前支持单图和文本输入，生成视频，
 
+![2f450eb26e906ebf9ab6f4c5426a790](https://github.com/user-attachments/assets/82fc74d8-625d-4223-8db0-7af65475310b)
 
 
 
