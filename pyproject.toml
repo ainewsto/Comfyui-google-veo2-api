@@ -1,0 +1,15 @@
+[project]
+name = "google-veo2-api"
+description = "NODES: Google Veo2 Video Generation"
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["google-genai"]
+
+[project.urls]
+Repository = "https://github.com/ainewsto/Comfyui-google-veo2-api"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "Comfyui-google-veo2-api"
+Icon = ""
